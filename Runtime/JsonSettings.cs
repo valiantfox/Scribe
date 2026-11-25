@@ -11,7 +11,7 @@ namespace Scribe
 
         public static JsonSerializerSettings NewSettings() => new JsonSerializerSettings
         {
-            Converters = { new Vector2IntConverter(), new Vector3Converter() },
+            Converters = { new Vector2IntConverter(), new Vector2Converter(), new Vector3Converter() },
         };
 
         // Call this early in your app, e.g. from a static initializer, GameManager, or before any serialization happens
